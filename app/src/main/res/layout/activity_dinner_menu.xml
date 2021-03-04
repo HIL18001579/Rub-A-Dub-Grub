@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/evening"
+    tools:context=".DinnerMenuActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDinnerMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="130dp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_dark">
+
+            <TextView
+                android:id="@+id/lblMenuItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtMenuItem1"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:shadowColor="@android:color/black"
+                android:text="@string/lblSausAndMash"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtMenuItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/btnAddToOrder"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="10dp"
+                android:width="30dp"
+                android:height="30dp"
+                android:background="@drawable/rounded"
+                android:freezesText="true"
+                android:gravity="center"
+                android:text="@string/txtQtyZero"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lblMenuItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_above="@+id/txtMenuItem2"
+                android:layout_toEndOf="@id/lblMenuItem1"
+                android:layout_toRightOf="@id/lblMenuItem1"
+                android:shadowColor="@android:color/black"
+                android:text="@string/lblShepsPie"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtMenuItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/btnAddToOrder"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/lblMenuItem1"
+                android:layout_toRightOf="@id/lblMenuItem1"
+                android:width="30dp"
+                android:height="30dp"
+                android:background="@drawable/rounded"
+                android:freezesText="true"
+                android:gravity="center"
+                android:text="@string/txtQtyZero"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lblMenuItem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/txtMenuItem3"
+                android:layout_toEndOf="@id/lblMenuItem2"
+                android:layout_toRightOf="@id/lblMenuItem3"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:shadowColor="@android:color/black"
+                android:text="@string/lblRibEye"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtMenuItem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/btnAddToOrder"
+                android:layout_toEndOf="@id/lblMenuItem2"
+                android:layout_toRightOf="@id/lblMenuItem2"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="10dp"
+                android:width="30dp"
+                android:height="30dp"
+                android:background="@drawable/rounded"
+                android:freezesText="true"
+                android:gravity="center"
+                android:text="@string/txtQtyZero"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lblMenuItem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/txtMenuItem4"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/lblMenuItem3"
+                android:layout_toRightOf="@id/lblMenuItem3"
+                android:shadowColor="@android:color/black"
+                android:text="@string/lblYellTail"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtMenuItem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/btnAddToOrder"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/lblMenuItem3"
+                android:layout_toRightOf="@id/lblMenuItem3"
+                android:width="30dp"
+                android:height="30dp"
+                android:background="@drawable/rounded"
+                android:freezesText="true"
+                android:gravity="center"
+                android:text="@string/txtQtyZero"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnAddToOrder"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/btnAddToOrder"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity">
+
+    <LinearLayout
+        android:id="@+id/linlayName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etxtName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints="@string/etxtName"
+            android:backgroundTint="@color/logoGreen"
+            android:hint="@string/etxtName"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            tools:targetApi="P" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linlaylblTable"
+        android:layout_below="@+id/linlayName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/lblTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/lblTable"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTable_1_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linlaylblTable"
+        android:gravity="center_horizontal|center_vertical">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnTBL1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:text="@string/btnTBL1"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnTBL2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:text="@string/btnTBL2"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnTBL3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:text="@string/btnTBL3"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTable_4_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutTable_1_3"
+        android:gravity="center_horizontal|center_vertical">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnTBL4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:text="@string/btnTBL4"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnTBL5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:text="@string/btnTBL5"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+   <LinearLayout
+        android:id="@+id/layoutTableSelected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTable_4_5"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/lblTableSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/lblTableSelected"
+            android:textColor="@android:color/black"
+            android:textSize="17.5sp" />
+
+        <TextView
+            android:id="@+id/txtTableSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:width="30dp"
+            android:height="30dp"
+            android:background="@drawable/rounded"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false"
+        android:layout_above="@+id/linlayTotal"
+        android:layout_below="@+id/layoutTableSelected"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtDetailQty1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal"
+                android:textColor="@android:color/black"
+                android:textDirection="rtl"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:targetApi="jelly_bean_mr1" />
+
+            <TextView
+                android:id="@+id/txtDetailView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/txtDetailQty1"
+                android:layout_toRightOf="@+id/txtDetailQty1"
+                android:gravity="fill_horizontal"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDetailPrice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:gravity="fill_horizontal"
+                android:textColor="@android:color/black"
+                android:textDirection="rtl"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:targetApi="jelly_bean_mr1" />
+
+            <TextView
+                android:id="@+id/txtDetailQty2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDetailQty1"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal"
+                android:textColor="@android:color/black"
+                android:textDirection="rtl"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/txtDetailView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDetailQty1"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/txtDetailQty2"
+                android:layout_toRightOf="@+id/txtDetailQty2"
+                android:gravity="fill_horizontal"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDetailPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDetailPrice1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:gravity="fill_horizontal"
+                android:textColor="@android:color/black"
+                android:textDirection="rtl"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:targetApi="jelly_bean_mr1" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linlayTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linlayButtons"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/lblTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="@string/lblTotal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="@string/txtQtyZero"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linlayButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnReStart"
+            android:layout_width="195dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="@string/btnRestart"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnPlaceOrder"
+            android:layout_width="195dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="@string/btnPlaceOrder"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+</RelativeLayout>

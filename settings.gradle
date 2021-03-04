@@ -1,0 +1,2 @@
+rootProject.name='Rub-A-Dub_Grub3'
+include ':app'
